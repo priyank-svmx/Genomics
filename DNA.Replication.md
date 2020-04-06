@@ -24,11 +24,13 @@
 
 - In the following problem, we assume that a `genome` has a single `ori` and is represented as a `DNA string`, or a `string of nucleotides` from the `four-letter alphabet {A, C, G, T}`.
 
-`Finding Origin of Replication Problem:
+```JS
+Finding Origin of Replication Problem:
 
 Input: A DNA string Genome.
 Output: The location of ori in Genome.
-STOP and Think: Does the Finding Origin of Replication Problem represent a clearly stated computational problem? (On "STOP and Think" questions, we encourage you to interact with other learners in the discussion forum below.)`
+STOP and Think: Does the Finding Origin of Replication Problem represent a clearly stated computational problem? (On "STOP and Think" questions, we encourage you to interact with other learners in the discussion forum below.)
+```
 
 ## NOT a well defined Computational Task
 
@@ -47,10 +49,12 @@ STOP and Think: Does the Finding Origin of Replication Problem represent a clear
 
 ### The question is how to find this hidden message _without knowing what it looks like_ in advance — can you find it? In other words, can you find something that _stands out_ in `ori` ?__
 
-``Hidden Message Problem: Find a “hidden message” in the replication origin
+```JS
+Hidden Message Problem: Find a “hidden message” in the replication origin
 
 Input: A string Text (representing the replication origin of a genome).
-Output: A hidden message in Text``
+Output: A hidden message in Text
+```
 
 ## Counting Words
 
@@ -77,9 +81,11 @@ Output: A hidden message in Text``
   - For example, if `Text = GACCATACTG`, then `Text(4, 3) = ATA`
   - Note that the last k-mer of Text begins at position |Text| − k, e.g., the last 3-mer of GACCATACTG starts at position 10 − 3 = 7
 
-``` PatternCount(Text, Pattern)
+```JS
+PatternCount(Text, Pattern)
      count ← 0
      for i ← 0 to |Text| − |Pattern|
         if Text(i, |Pattern|) = Pattern
            count ← count + 1
-  return count ```
+     return count
+```
